@@ -4,67 +4,90 @@
         <title>Shivam Patel</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
-
     <body id="top">
-        <header>
-            <a href="#top" class="top">Shivam Patel</a>
+        <header class="fixedw-full bg-purple-600 text-white md:flex justify-between">
+            <a class="font-bold block px-8 py-4" href="#top" class="top">Shivam Patel</a>
             <nav>
-                <ul>
+                <ul class="md:flex">
                     <li>
-                        <a href="#hero">Hero</a>
+                        <a class="block px-8 py-4 hover:bg-purple-500" href="#hero">Hero</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a class="block px-8 py-4 hover:bg-purple-500" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#me">Me</a>
+                        <a class="block px-8 py-4 hover:bg-purple-500" href="#me">Me</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="hero">
-                <p>I am Shivam Patel</p>
-                <p>Computer Science major and Business Administration minor</p>
+            <section id="hero" class="h-screen bg-red-400 text-white text-center grid place-items-center">
+                <div>
+                    <p class="text-lg font-bold italic uppercase tracking-wider">I am Shivam Patel</p>
+                    <h1 class="font-bold text-5xl leading-none">Clemson University</h1>
+                    <p class="font-mono text-lg">Computer Science major and Business Administration minor</p>
+                    <a
+                        href="https://www.linkedin.com/in/shivam-patel-454a6b1aa"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        class="mt-10 bg-white rounded-lg px-8 py-4 text-black inline-block"
+                    >Connect</a>
+                </div>
             </section>
                 
-            <section id="about">
-                <h2>About</h2>
-                <ul>
-                    <li>
-                        <img src="programming.jpeg"/>
-                        <h3>Programming</h3>
-                        <p>I like writing programs in C/C++.</p>
+            <section id="about" class="bg-gray-100 pt-10">
+                <h2 class="text-center text-xl font-bold text-blue-800">About</h2>
+                <ul class="grid p-10 gap-10 md:grid-cols-3" >
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="programming.jpeg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="font-bold">Programming</h3>
+                            <p>I like writing programs in C/C++.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="gym.jpeg"/>
-                        <h3>Gym</h3>
-                        <p>I like lifting and working out.</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="gym.jpeg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="font-bold">Gym</h3>
+                            <p>I like lifting and working out.</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="netflix.jpeg"/>
-                        <h3>Netflix</h3>
-                        <p>In my free time, I like watching Tv shows or movies.</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="netflix.jpeg" class="w-full" />
+                        <div class="p-4">
+                            <h3 class="font-bold">Netflix</h3>
+                            <p>In my free time, I like watching Tv shows or movies.</p>
+                        </div>
                     </li>
                 </ul>
             </section>
 
-            <section id="me">
-                <h2>Me</h2>
-                <ul>
-                    <li>
-                        <img src="mypic.jpeg" />
-                        <h3>This is me and my friends</h3>
-                    </li>
-                </ul>
-            </section>
+            <section id="me" class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+                    <div class="sm:w-1/2 mb-10 px-4">
+                      <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full" src="me.jpg">
+                      </div>
+                      <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">That's me</h2>
+                    </div>
+                    <div class="sm:w-1/2 mb-10 px-4">
+                      <div class="rounded-lg h-64 overflow-hidden">
+                        <img alt="content" class="object-cover object-center h-full w-full" src="mypic.jpeg">
+                      </div>
+                      <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Me with my friends</h2>
+                    </div>
+                  </div>
+                </div>
+              </section>
 
         </main>
 
-        <footer>
+        <footer class="text-white bg-gray-800 p-10 italic text-center">
             © 2021 Shivam Patel. All rights reserved.
         </footer>
     </body>
