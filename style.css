@@ -1,0 +1,11 @@
+nav a {
+    color: blue;
+    text-decoration: none;
+} 
+.top{
+    font-size: 60px;
+    color: red;
+}
+#hero{
+    color: red;
+}
